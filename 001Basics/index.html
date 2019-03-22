@@ -1,32 +1,62 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<style type="text/css">
+
+    body{
+        background-image: url("./images/0.jpg");
+        background-size: 100% 100%;
+        height: 100%;
+    }
+    html{
+        height: 100%;
+    }
+    @keyframes sya_lyrics { /*css 动画的关键帧*/
+        0%   {opacity: 0}
+        25%  {opacity: 100}
+        50%  {opacity: 0}
+        100% {opacity: 0}
+    }
+    div{
+        /*位置：相对*/
+        position: relative;
+        /*left: 30px;*/
+        top: 50px;
+
+        /*元素宽度*/
+        /*width: 80%;*/
+        /*元素高度*/
+        /*height: 30%;*/
+
+        color: white;/*颜色*/
+        animation: sya_lyrics 5s infinite alternate;/*animation css的动画 alternate轮流循环 */
+    }
+    p{
+        margin: 2px 2px;/*边缘*/
+        /*缩进文本*/
+        /*text-indent: 20px;*/
+        /*水平对齐*/
+        text-align: center;
+    }
+    .e{
+        font-size: 25px;/*字体大小*/
+    }
+    .c{
+        font-size: 20px;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <title>See You Again</title>
-    <style type="text/css">
-        body{
-            background-image: url("./images/SEE_YOU_AGAIN.png");
-            background-size: 100% 100%;
-            height: 100%;
-        }
-        html{
-            height: 100%;
-        }
-        @keyframes sya_lyrics {
-            from {opacity: 0}
-            to {opacity: 100}
-        }
-        p{
-            color: white;
-            animation: sya_lyrics 5s infinite alternate;
-        }
-    </style>
 </head>
 <body>
-<p>It's been a long day without you my friend</p>
-<p>没有老友你的陪伴 日子真是漫长</p>
-<p>And I'll tell you all about it when I see you again</p>
-<p>与你重逢之时 我会敞开心扉倾诉所有</p>
+<div>
+    <p class="e">It's been a long day without you my friend</p>
+    <p class="c">没有老友你的陪伴 日子真是漫长</p>
+</div>
+<div>
+    <p class="e">And I'll tell you all about it when I see you again</p>
+    <p class="c">与你重逢之时 我会敞开心扉倾诉所有</p>
+</div>
 </body>
 </html>
