@@ -4,12 +4,19 @@
 <style type="text/css">
 
     body{
-        background-image: url("./images/0.jpg");
+        background-image: url("./images/舞动001.png");
         background-size: 100% 100%;
         height: 100%;
+        margin: 0;
     }
     html{
         height: 100%;
+    }
+    audio{
+        /*位置：绝对*/
+        position: absolute;
+        top: 100%;
+        width: 100%;
     }
     @keyframes sya_lyrics { /*css 动画的关键帧*/
         0%   {opacity: 0}
@@ -50,6 +57,9 @@
     <title>See You Again</title>
 </head>
 <body>
+<audio src="./music/SYA.mp3" controls="controls" autoplay="autoplay" loop="loop">
+    《see you again》.
+</audio>
 <div>
     <p class="e">It's been a long day without you my friend</p>
     <p class="c">没有老友你的陪伴 日子真是漫长</p>
